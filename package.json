@@ -1,0 +1,55 @@
+{
+  "name": "preact-to-json",
+  "version": "0.0.0",
+  "description": "Convert Preact components to JSON.",
+  "license": "MIT",
+  "repository": "wyze/preact-to-json",
+  "author": {
+    "name": "Neil Kistner",
+    "email": "neil.kistner@gmail.com",
+    "url": "neilkistner.com"
+  },
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib",
+    "prebuild": "npm run clean",
+    "preversion": "npm run build",
+    "test": "jest",
+    "version": "write-changelog"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "preact",
+    "json",
+    "jest",
+    "snapshot",
+    "testing"
+  ],
+  "peerDepdendencies": {
+    "preact": "^7.0.0 || ^8.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.3",
+    "jest": "^20.0.1",
+    "preact": "^8.1.0",
+    "ts-jest": "^20.0.3",
+    "typescript": "^2.3.2",
+    "write-changelog": "^1.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.tsx?$",
+    "transform": {
+      "\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    }
+  }
+}

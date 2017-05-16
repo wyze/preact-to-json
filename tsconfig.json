@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "h",
+    "declaration": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es2015.core",
+      "es2015.symbol"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "lib",
+    "strict": true,
+    "target": "es5"
+  },
+  "files": [
+    "src/index.ts"
+  ]
+}

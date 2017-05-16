@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`preact-to-json makes pretty snapshots 1`] = `
+<div>
+  <Header
+    text="List"
+  />
+  <List
+    items={
+      Array [
+        1,
+        2,
+        3,
+        4,
+        5,
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`preact-to-json only shallow renders 1`] = `<Parent />`;
+
+exports[`preact-to-json prints objects nicely 1`] = `
+<Child
+  style={
+    Object {
+      "color": "rebeccapurple",
+      "outline": 0,
+    }
+  }
+/>
+`;
+
+exports[`preact-to-json supports displaying functions 1`] = `
+<Child
+  handleClick={[Function]}
+/>
+`;
+
+exports[`preact-to-json works with attributes 1`] = `
+<a
+  href="//google.com"
+>
+  Google
+</a>
+`;
