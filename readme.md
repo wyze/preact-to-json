@@ -4,7 +4,7 @@
 [![npm][npm-image]][npm-url]
 [![devDependencies][depsdev-image]][depsdev-url]
 
-> Convert [Preact](//github.com/developit/preact) components into JSON.
+> Convert [Preact](//github.com/developit/preact) components to JSON.
 
 _**Note:** This library currently only supports functional components and shallow rendering._
 
