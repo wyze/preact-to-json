@@ -8,10 +8,10 @@ export type Element = {
   key: string | null,
   props: {
     [ key: string ]: any,
-  } | null,
+  },
   type: NodeName,
 }
-type Attributes = { [ name: string ]: any } | null
+type Attributes = { [ name: string ]: any }
 
 /**
  * Determines the name of the component.
@@ -58,14 +58,12 @@ const mapChildrenToJSON = ( child: Child ): Child => {
  * @return {Attributes}
  */
 const getWithoutChildren = ( attributes: Attributes ): Attributes =>
-  attributes
-    ? Object.keys(attributes).reduce(
-        ( acc, key ) => key === 'children'
-          ? acc
-          : { ...acc, [key]: attributes[key] },
-        {},
-      )
-    : null
+  Object.keys(attributes).reduce(
+    ( acc, key ) => key === 'children'
+      ? acc
+      : { ...acc, [key]: attributes[key] },
+    {},
+  )
 
 /**
  * Turns a VNode (Preact Component) into JSON.
@@ -85,7 +83,7 @@ const toJSON = ({ attributes = null, children, key = null, nodeName }: JSX.Eleme
       : children.map(mapChildrenToJSON)
     : children,
   key,
-  props: getWithoutChildren(attributes),
+  props: getWithoutChildren(attributes || {}),
   type: getType(nodeName),
 })
 

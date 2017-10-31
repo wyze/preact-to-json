@@ -5,7 +5,7 @@ const element = {
   $$typeof: Symbol.for('react.test.json'),
   children: null,
   key: null,
-  props: null,
+  props: {},
 }
 
 describe('preact-to-json', () => {
