@@ -112,8 +112,13 @@ const renderComponent = ( nodeName: any, props: Element['props'] ): JSX.Element 
  *
  * @return {Element | void}
  */
-const render = ({ attributes, children, nodeName }: JSX.Element): Element | void =>
-  toJSON(renderComponent(nodeName, { ...attributes, children }))
+const render = ({ attributes, children, nodeName }: JSX.Element): Element | void => {
+  const rendered = renderComponent(nodeName, { ...attributes, children })
+
+  if ( rendered ) {
+    return toJSON(rendered)
+  }
+}
 
 export { render }
 export default render

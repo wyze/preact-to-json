@@ -16,6 +16,16 @@ describe('preact-to-json', () => {
     expect(actual).toEqual({ ...element, type: 'div' })
   })
 
+  it('works when component returns null', () => {
+    const Foo = () => {
+      return null
+    }
+    const actual = render(<Foo />)
+
+    expect(actual).toEqual(undefined)
+    expect(actual).toMatchSnapshot()
+  })
+
   it('only shallow renders', () => {
     const Child = () => (<div />)
     const Parent = () => (<Child />)
@@ -95,6 +105,18 @@ describe('preact-to-json', () => {
     const actual = render(<Foo />)
 
     expect(actual).toEqual({ ...element, type: 'div' })
+    expect(actual).toMatchSnapshot()
+  })
+
+  it('works with class components who render null', () => {
+    class Foo extends Component<{}, {}> {
+      public render() {
+        return null
+      }
+    }
+    const actual = render(<Foo />)
+
+    expect(actual).toEqual(undefined)
     expect(actual).toMatchSnapshot()
   })
 })

@@ -38,6 +38,8 @@ exports[`preact-to-json supports displaying functions 1`] = `
 />
 `;
 
+exports[`preact-to-json works when component returns null 1`] = `undefined`;
+
 exports[`preact-to-json works with attributes 1`] = `
 <a
   href="//google.com"
@@ -47,3 +49,5 @@ exports[`preact-to-json works with attributes 1`] = `
 `;
 
 exports[`preact-to-json works with class components 1`] = `<div />`;
+
+exports[`preact-to-json works with class components who render null 1`] = `undefined`;
