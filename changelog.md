@@ -1,5 +1,9 @@
 ## Change Log
 
+### [v1.1.1](https://github.com/wyze/preact-to-json/releases/tag/v1.1.1) (2017-11-09)
+
+* [[`e10edc0612`](https://github.com/wyze/preact-to-json/commit/e10edc0612)] - Support components returning null from render (Neil Kistner)
+
 ### [v1.1.0](https://github.com/wyze/preact-to-json/releases/tag/v1.1.0) (2017-11-09)
 
 * [[`e14ea69ee5`](https://github.com/wyze/preact-to-json/commit/e14ea69ee5)] - Update meta files (Neil Kistner)

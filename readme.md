@@ -47,11 +47,9 @@ exports[`Component renders 1`] = `
 
 > [Full Change Log](changelog.md)
 
-### [v1.1.0](https://github.com/wyze/preact-to-json/releases/tag/v1.1.0) (2017-11-09)
+### [v1.1.1](https://github.com/wyze/preact-to-json/releases/tag/v1.1.1) (2017-11-09)
 
-* [[`e14ea69ee5`](https://github.com/wyze/preact-to-json/commit/e14ea69ee5)] - Update meta files (Neil Kistner)
-* [[`90a4246b27`](https://github.com/wyze/preact-to-json/commit/90a4246b27)] - Add support for class components (Neil Kistner)
-* [[`f7dfc9ee92`](https://github.com/wyze/preact-to-json/commit/f7dfc9ee92)] - Upgrade dependencies (Neil Kistner)
+* [[`e10edc0612`](https://github.com/wyze/preact-to-json/commit/e10edc0612)] - Support components returning null from render (Neil Kistner)
 
 ## License
 
