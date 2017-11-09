@@ -1,4 +1,4 @@
-import { h } from 'preact'
+import { Component, h } from 'preact'
 import render from '..'
 
 const element = {
@@ -83,6 +83,18 @@ describe('preact-to-json', () => {
       ],
       type: 'div',
     })
+    expect(actual).toMatchSnapshot()
+  })
+
+  it('works with class components', () => {
+    class Foo extends Component<{}, {}> {
+      public render() {
+        return <div />
+      }
+    }
+    const actual = render(<Foo />)
+
+    expect(actual).toEqual({ ...element, type: 'div' })
     expect(actual).toMatchSnapshot()
   })
 })

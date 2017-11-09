@@ -88,14 +88,32 @@ const toJSON = ({ attributes = null, children, key = null, nodeName }: JSX.Eleme
 })
 
 /**
- * Renders a functional Preact component and passes it to `toJSON`.
+ * Renders a Preact component.
  *
- * @param {JSX.Element} vnode The VNode to render.
+ * @param {any} nodeName The component to render.
+ * @param {Object} props The props object.
  *
  * @return {Element}
  */
+const renderComponent = ( nodeName: any, props: Element['props'] ): JSX.Element => {
+  // stateless functional component
+  if ( !nodeName.prototype || typeof nodeName.prototype.render !== 'function' ) {
+    return (nodeName as Function)(props)
+  }
+
+  const component = new nodeName(props)
+
+  return component.render(component.props, component.state)
+}
+
+/**
+ * Renders a Preact component and passes it to `toJSON`.
+ *
+ *
+ * @return {Element | void}
+ */
 const render = ({ attributes, children, nodeName }: JSX.Element): Element | void =>
-  toJSON((nodeName as any)({ ...attributes, children }))
+  toJSON(renderComponent(nodeName, { ...attributes, children }))
 
 export { render }
 export default render

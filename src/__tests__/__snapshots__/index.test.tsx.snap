@@ -45,3 +45,5 @@ exports[`preact-to-json works with attributes 1`] = `
   Google
 </a>
 `;
+
+exports[`preact-to-json works with class components 1`] = `<div />`;

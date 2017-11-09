@@ -6,7 +6,7 @@
 
 > Convert [Preact](//github.com/developit/preact) components to JSON.
 
-_**Note:** This library currently only supports functional components and shallow rendering. If you need class support and full (non-shallow) rendering, check out [nathancahill/preact-render-to-json](//github.com/nathancahill/preact-render-to-json)._
+_**Note:** This library currently only supports shallow rendering. If you need full (non-shallow) rendering, check out [nathancahill/preact-render-to-json](//github.com/nathancahill/preact-render-to-json)._
 
 ## Installation
 
