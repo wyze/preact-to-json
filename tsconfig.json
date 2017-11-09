@@ -14,7 +14,10 @@
     "moduleResolution": "node",
     "outDir": "lib",
     "strict": true,
-    "target": "es5"
+    "target": "es5",
+    "types": [
+      "jest"
+    ]
   },
   "files": [
     "src/index.ts"
