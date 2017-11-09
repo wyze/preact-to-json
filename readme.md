@@ -47,12 +47,11 @@ exports[`Component renders 1`] = `
 
 > [Full Change Log](changelog.md)
 
-### [v1.0.2](https://github.com/wyze/preact-to-json/releases/tag/v1.0.2) (2017-10-31)
+### [v1.1.0](https://github.com/wyze/preact-to-json/releases/tag/v1.1.0) (2017-11-09)
 
-* [[`2b14e135be`](https://github.com/wyze/preact-to-json/commit/2b14e135be)] - Update TS libs configuration (Neil Kistner)
-* [[`d21d9da61b`](https://github.com/wyze/preact-to-json/commit/d21d9da61b)] - Props should always return an object (Neil Kistner)
-* [[`a74688682e`](https://github.com/wyze/preact-to-json/commit/a74688682e)] - Upgrade dependencies (Neil Kistner)
-* [[`fcc1bdf6d4`](https://github.com/wyze/preact-to-json/commit/fcc1bdf6d4)] - Update disclaimer in readme (Neil Kistner)
+* [[`e14ea69ee5`](https://github.com/wyze/preact-to-json/commit/e14ea69ee5)] - Update meta files (Neil Kistner)
+* [[`90a4246b27`](https://github.com/wyze/preact-to-json/commit/90a4246b27)] - Add support for class components (Neil Kistner)
+* [[`f7dfc9ee92`](https://github.com/wyze/preact-to-json/commit/f7dfc9ee92)] - Upgrade dependencies (Neil Kistner)
 
 ## License
 

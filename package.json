@@ -1,6 +1,6 @@
 {
   "name": "preact-to-json",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Convert Preact components to JSON.",
   "license": "MIT",
   "repository": "wyze/preact-to-json",

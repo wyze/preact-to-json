@@ -1,5 +1,11 @@
 ## Change Log
 
+### [v1.1.0](https://github.com/wyze/preact-to-json/releases/tag/v1.1.0) (2017-11-09)
+
+* [[`e14ea69ee5`](https://github.com/wyze/preact-to-json/commit/e14ea69ee5)] - Update meta files (Neil Kistner)
+* [[`90a4246b27`](https://github.com/wyze/preact-to-json/commit/90a4246b27)] - Add support for class components (Neil Kistner)
+* [[`f7dfc9ee92`](https://github.com/wyze/preact-to-json/commit/f7dfc9ee92)] - Upgrade dependencies (Neil Kistner)
+
 ### [v1.0.2](https://github.com/wyze/preact-to-json/releases/tag/v1.0.2) (2017-10-31)
 
 * [[`2b14e135be`](https://github.com/wyze/preact-to-json/commit/2b14e135be)] - Update TS libs configuration (Neil Kistner)
