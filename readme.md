@@ -47,9 +47,9 @@ exports[`Component renders 1`] = `
 
 > [Full Change Log](changelog.md)
 
-### [v1.1.1](https://github.com/wyze/preact-to-json/releases/tag/v1.1.1) (2017-11-09)
+### [v1.1.2](https://github.com/wyze/preact-to-json/releases/tag/v1.1.2) (2018-01-26)
 
-* [[`e10edc0612`](https://github.com/wyze/preact-to-json/commit/e10edc0612)] - Support components returning null from render (Neil Kistner)
+* [[`7201875d00`](https://github.com/wyze/preact-to-json/commit/7201875d00)] - Handle when null/undefined children are rendered (Neil Kistner)
 
 ## License
 
