@@ -66,6 +66,16 @@ const getWithoutChildren = ( attributes: Attributes ): Attributes =>
   )
 
 /**
+ * Filter out possible null or undefined children.
+ *
+ * @param {preact.VNode[]} children The children to filter on.
+ *
+ * @return {preact.VNode[]}
+ */
+const getValidChildren = ( children: preact.VNode[] ) =>
+  children.filter(child => child != null)
+
+/**
  * Turns a VNode (Preact Component) into JSON.
  *
  * Will take a component and convert it to a JSON representation. This will make
@@ -78,9 +88,9 @@ const getWithoutChildren = ( attributes: Attributes ): Attributes =>
 const toJSON = ({ attributes = null, children, key = null, nodeName }: JSX.Element): Element => ({
   $$typeof: Symbol.for('react.test.json'),
   children: Array.isArray(children)
-    ? children.length === 0
+    ? getValidChildren(children).length === 0
       ? null
-      : children.map(mapChildrenToJSON)
+      : getValidChildren(children).map(mapChildrenToJSON)
     : children,
   key,
   props: getWithoutChildren(attributes || {}),

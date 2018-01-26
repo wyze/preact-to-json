@@ -119,4 +119,14 @@ describe('preact-to-json', () => {
     expect(actual).toEqual(undefined)
     expect(actual).toMatchSnapshot()
   })
+
+  it('works when parent renders children of child component which returns null', () => {
+    const Foo = ({ children }: any) => <div>{children}</div>
+    const Parent = () => (
+      <Foo>{false && <i />}</Foo>
+    )
+    const actual = render(<Parent />)
+
+    expect(actual).toMatchSnapshot()
+  })
 })
